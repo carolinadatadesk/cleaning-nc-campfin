@@ -1,0 +1,60 @@
+---
+title: "Script for Downloading N.C. Campaign Finance Reports into R"
+output: html_notebook
+---
+
+For this, you need two packages from the tidyverse.
+
+```{r}
+library(readr)
+library(dplyr)
+```
+
+You have to drill down quite a way from https://cf.ncsbe.gov/CFOrgLkup/ before you find the url you want, but once you do, just replace the URL on line 18 with the URL for the "Export data to .csv" that you need.
+
+
+
+
+```{r}
+
+url <- "https://cf.ncsbe.gov/CFOrgLkup/ExportDetailResults/?ReportID=168216&Type=REC&Title=Cooper%20for%20North%20Carolina%20-%202019%20Mid%20Year%20Semi-Annual"
+```
+
+
+read_csv() does not do a great job here guessing the correct col_types, so we have to define them explicitly.
+
+
+```{r}
+receipts <- read_csv(url, skip=1, col_types = 
+cols(
+  Date = col_date("%m/%d/%Y"),
+  `Is Prior` = col_logical(),
+  Name = col_character(),
+  `Street 1` = col_character(),
+  `Street 2` = col_character(),
+  City = col_character(),
+  State = col_character(),
+  `Full Zip` = col_character(),
+  `Country Name` = col_character(),
+  `Outside US Postal Code` = col_character(),
+  Profession = col_character(),
+  `Employers Name` = col_character(),
+  Purpose = col_character(),
+  `Receipt Type Desc` = col_character(),
+  `Account Abbr` = col_double(),
+  `Form Of Payment Desc` = col_character(),
+  Description = col_character(),
+  Amount = col_double(),
+  `Sum To Date` = col_double()))
+        
+head(receipts)
+
+```
+
+Finally, we should rename the columns to remove spaces and generally promote brevity.
+
+```{r}
+names(receipts) <- c("date","prior","donor","street1","street2","city","state","zip","country","postal","profession","employer","purpose","type","accont","payment_form","description","amount","sum_to_date")
+```
+
+ 
