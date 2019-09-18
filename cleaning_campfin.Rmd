@@ -1,6 +1,10 @@
 ---
 title: "Script for Downloading N.C. Campaign Finance Reports into R"
-output: html_notebook
+author: Ryan Thornburg
+date: September 18, 2019
+output:
+  md_document:
+    variant: markdown_github
 ---
 
 For this, you need two packages from the tidyverse.
