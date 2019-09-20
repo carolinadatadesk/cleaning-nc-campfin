@@ -72,5 +72,5 @@ Finally, we should rename the columns to remove spaces and generally
 promote brevity.
 
 ``` r
-names(receipts) <- c("date","prior","donor","street1","street2","city","state","zip","country","postal","profession","employer","purpose","type","accont","payment_form","description","amount","sum_to_date")
+names(receipts) <- c("date","prior","donor","street1","street2","city","state","zip","country","postal","profession","employer","purpose","type","account","payment_form","description","amount","sum_to_date")
 ```
