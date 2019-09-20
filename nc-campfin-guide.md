@@ -1,0 +1,63 @@
+**A data journalist&#39;s guide to understanding campaign finance in North Carolina**
+
+Ryan Thornburg
+University of North Carolina at Chapel Hill
+Hussman School of Journalism and Media
+
+Sept. 20, 2019
+
+Yes, you can download the data. But what does it all mean?
+
+It&#39;s important for anyone who wants to analyze data to understand the data&#39;s lifecycle before it got to you. Who collected? How did they collect it? And why?
+
+The best way to understand data coming out of a government agency is to look at it from the perspective of how it got into the agency. In this case, this means looking at the data from the perspective of the candidate who files the reports.
+
+There are two ways of getting into the mindset of a candidate. One would be to find a candidate or a campaign&#39;s finance director to interview on background. But for young reporters who are often not yet well sourced – and for any reporters who don&#39;t want to rely on the kindness of strangers returning your call and helping you do your job – the more efficient way to get started is looking for some sort of paperwork that a government agency creates that describes how and why the data gets created. While a state agency is under no obligation to talk with a reporter on the phone, they are required to make most of their paperwork public. Thinking about public records as important background sources is called &quot;getting into a documents state of mind.&quot;
+
+In North Carolina, the state agency responsible for monitoring campaign finance is the Board of Elections. The BoE has an page dedicated to campaign finance at [https://www.ncsbe.gov/Campaign-Finance](https://www.ncsbe.gov/Campaign-Finance), and on that page you will find a link to the &quot;Campaign Finance Manual.&quot; This is the document that the Board provides to campaigns so the campaigns know how they are supposed to collect and report the data. Aha! (Not all manuals are so easy to find, but in all cases of working with government data they are often worth tracking down.)
+
+Skimming through the manual gives us some good basic information, including:
+
+- That there are four quarterly reporting deadlines for most offices, and two additional periods in the 48 hours before an election where candidates must report contributions.
+- That all candidates for Council of State offices, the legislature, judicial offices, or district attorneys must file campaign finance reports.
+- That candidates for local offices only need to file campaign finance reports after they have collected $1,000 in contributions for their campaign.
+- That statewide candidates who spend OR raise more than $5,000 must file their reports electronically, but that others can submit paper reports.
+- That candidates who aren&#39;t running for statewide office don&#39;t have to file electronically until they have raised OR spent $10,000.
+- The maximum amount a single person or political committee can give OR LOAN a candidate in a 2020 &quot;election&quot; is $5,400, except…
+  - That the candidate or candidate&#39;s spouse can spend an unlimited amount of their own money on a campaign, but the donations must be disclosed.
+  - That &quot;political party&quot; &quot;executive committees&quot; can give an unlimited amount of money to a campaign, but the donations must be disclosed.
+- That the &quot;election cycle&quot; for legislative offices runs from Jan. 1, 2019 to Dec. 31, 2020 and for the governor and other council of state offices it&#39;s from Jan. 1, 2017 to Dec. 31, 2020.
+- That, really, there are up to three &quot;elections&quot; a candidate might have to run before winning an office in a particular &quot;election cycle&quot; – the primary, second primary and general election. This means that the actual limit on a donor is $5,400 for each of those three elections – or up to $16,200 per &quot;election cycle&quot;.
+- That campaigns must list the names, addresses, occupations, dates, and amounts and form of payments must be listed for any donor who gives more than $50 to their campaign during their election cycle.
+- Campaigns must list the date, amount, payment method, account and &quot;election sum-to-date&quot; for all contributions, even those less than $50.
+- That &quot;Aggregated Contributions from Individuals&quot; indicates a donation from someone who had given no more than $50 to the candidate by the end of the reporting period the report covers.
+- Campaigns must list not only monetary donations, but also &quot;in-kind&quot; contributions of goods and services.
+
+This instruction manual gets us most of the information we need to understand campaign finance data, but it does not get us everything. For example, what does &quot;is prior&quot; mean?
+
+The manual gives us a couple of clues. For example, it mentions some form called &quot;CRO-1210&quot;. That leads us to the next lesson for understanding the lifecycle of data: **always get the paper form**.
+
+Most of the public data generated by state agencies can still trace its heritage back to some paper form that existed before the Internet – or even computers – were ubiquitous. To make sure that everyone can participate in transactions with their government, paper remains an acceptable – and sometimes preferred or only – way of getting data into the hands of an agency.
+
+One of the benefits – and pitfalls – of well-designed beaurocracy is that it is designed to leave little room for ambiguity. That means every form has a very specific – often numerically specific – name. What we lay folks call &quot;campaign finance reports&quot; might refer to any one of about 75 different forms. Knowing the specific name of a form helps you get what you want more quickly. For example, its not inconceivable that a records request for &quot;campaign finance reports&quot; would get denied because the agency doesn&#39;t actually have anything called a &quot;campaign finance report.&quot; Ask for form &quot;CRO-1201&quot; though and there is little doubt about what you are asking for and leaves little room for an agency to interpret your request in a way that slows down your reporting.
+
+In this case, the manual points us to a webpage where we can view and download not only CRO-1201, but all 75 forms. If it didn&#39;t, though, a Web search for something like &quot;NC instructions for filling out CRO-1210&quot; might get us what we want. If it doesn&#39;t a little trick you can use on Google.com is to do an advanced search by domain and filetype. For example: this search on Google.com takes us right to the form we need: &quot;CRO-1210 site:ncsbe.gov filetype:pdf&quot; (Often forms are in PDF format, but &quot;doc&quot; is also useful. And if you&#39;re looking for a spreadsheet that someone might have posted online somewhere, &quot;csv&quot; or &quot;xls&quot; is what you want to use for the filetype.)
+
+Take a look at a blank CRO-1210 ([https://www.ncsbe.gov/Portals/0/FilesP/CFForms/cro1210.pdf](https://www.ncsbe.gov/Portals/0/FilesP/CFForms/cro1210.pdf)) and you can see how the data goes from paper to spreadsheet. This is going from a documents state of mind to a data state of mind.
+
+And lucky for us, the state Board of Elections has posted not just the form, but the instructions for filling it out at [https://www.ncsbe.gov/Campaign-Finance/reporting-forms](https://www.ncsbe.gov/Campaign-Finance/reporting-forms). These get in to more details than the manual, which has to cover a much broader range of campaign finance law.
+
+It&#39;s only in this instruction form ([https://www.ncsbe.gov/Portals/0/FilesP/CFForms/cro1210instructions.pdf](https://www.ncsbe.gov/Portals/0/FilesP/CFForms/cro1210instructions.pdf)) do we find any definitive answer to some key information we need in order to understand the data:
+
+- That the &quot;employer&quot; field can either be the name of a company, or a general &quot;business field,&quot; as defined by the NAICS classification (available on the US Census website).
+- That &quot;sum to date&quot; column lists the total amount for all contributions a donor has given to a candidate since the start of the current election.
+- That &quot;is prior&quot; indicates whether the donation on a particular row was already listed on a previous report which &quot;could be because the contribution was disclosed as an &#39;aggregated individual contribution&#39; in a prior report.&quot;
+- That the numbers in the &quot;account&quot; column refer to something listed in Form CRO-3500, but that each committee comes up with its own codes (and, spoiler alert, campaigns&#39; CRO-3500 are not published online.)
+
+**Conclusion**
+
+While these instructions are specific to campaign finance reports in North Carolina, the methodology for understanding public data can be used generically. Remember these steps:
+
+1. Understand the data&#39;s lifecycle from the perspective of someone who enters it into the system.
+2. Get the un-ambiguous bureaucratic name for the paper form, as well as a blank copy of the form.
+3. If available, get a copy of the manual that the government agency made in order to instruct people on the correct way to fill out paper forms or enter the data.
